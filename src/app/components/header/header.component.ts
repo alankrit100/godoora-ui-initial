@@ -4,7 +4,6 @@ import { ModalController } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { AppService } from 'src/app/services/app.service';
 import { Location } from '@angular/common';
-import { AuthService } from 'angularx-social-login';
 
 @Component({
   selector: 'app-header',

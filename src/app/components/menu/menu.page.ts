@@ -4,7 +4,7 @@ import { Location } from '@angular/common';
 import { AppService } from 'src/app/services/app.service';
 import { LoginPage } from 'src/app/pages/login/login.page';
 import { ModalController, MenuController } from '@ionic/angular';
-import { AuthService } from 'angularx-social-login';
+import { SocialAuthService } from 'angularx-social-login'
 
 @Component({
   selector: 'app-menu',
@@ -21,7 +21,7 @@ export class MenuPage implements OnInit {
     private location: Location,
     private modalCtrl: ModalController,
     private appService: AppService,
-    private authService: AuthService,
+    private authService: SocialAuthService,
     public menuController: MenuController
   ) {
   }

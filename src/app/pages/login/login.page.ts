@@ -4,7 +4,7 @@ import { ModalController, NavParams, LoadingController } from '@ionic/angular';
 import { UtilAlertService } from 'src/app/services/util/util-alert.service';
 import { Otp } from '../model/shop-keeper.model';
 import { Router } from '@angular/router';
-import { AuthService } from 'angularx-social-login';
+import { SocialAuthService } from 'angularx-social-login';
 import { GoogleLoginProvider } from 'angularx-social-login';
 import { VendorDeatil} from 'src/app/app.const';
 
@@ -41,7 +41,7 @@ export class LoginPage implements OnInit {
     private modalCtrl: ModalController,
     private utilAlertService: UtilAlertService,
     private router: Router,
-    private authService: AuthService,
+    private authService: SocialAuthService,
     private loadingController: LoadingController
   ) {
     this.otpObj = new Otp();
