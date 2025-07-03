@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "start": "ng serve --host 0.0.0.0 --env=dev --aot=true --output-hashing=all --extract-css=true && npm run add_date",
+  "start": "set NODE_OPTIONS=--openssl-legacy-provider && ng serve",
     "build": "ng build --prod --output-hashing=all",
     "add_date": "npm run add_date_js && npm run add_date_css && npm run rm_bak_files",
     "add_date_js": "for i in www/*; do if [ -f $i ]; then LC_ALL=C sed -i.bak 's:js\":js?'$(date +%H%M%m%d%y)'\":g' $i; fi done",
