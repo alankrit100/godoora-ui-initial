@@ -21,7 +21,7 @@ export class LandingPage implements OnInit {
   totalBranches = [];
   selectedBranch = 'default';
   smallScreen = false;
-  @ViewChild('slideWithLand', { static: false }) slideWithLand: IonSlides;
+  @ViewChild('slideWithLand') slideWithLand: IonSlides;
 
   @HostListener("window:resize", ['$event'])
   onResize(event) {

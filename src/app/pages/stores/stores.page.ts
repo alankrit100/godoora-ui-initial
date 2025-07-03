@@ -50,7 +50,7 @@ export class StoresPage implements OnInit {
     {path: 'https://source.unsplash.com/551x598/?Togo'},
     {path: 'https://source.unsplash.com/518x813/?Romania'}
   ];
-  @ViewChild('scrollMe', {static: false}) private content: any;
+  @ViewChild('scrollMe') private content: any;
   onResize(event) {
     this.smallScreen = this.appService.checkSmallScreen();
   }

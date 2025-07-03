@@ -24,7 +24,7 @@ export class HomePage {
     slidesPerView: 1,
     autoplay: true
   };
-  @ViewChild('slideWithLand', {static: false}) slideWithLand: IonSlides;
+  @ViewChild('slideWithLand') slideWithLand: IonSlides;
 
   constructor(
     private router: Router,
